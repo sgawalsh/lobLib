@@ -1,0 +1,8 @@
+#define LOGLIB_API __declspec(dllexport)
+#define LOGLIB_API __declspec(dllimport)
+#define REQUIRE(__VA_ARGS__) INTERNAL_CATCH_TEST( "REQUIRE", Catch::ResultDisposition::Normal, __VA_ARGS__ )
+#define REQUIRE(__VA_ARGS__) (void)(0)
+#define REQUIRE(__VA_ARGS__) INTERNAL_CATCH_TEST( "REQUIRE", Catch::ResultDisposition::Normal, __VA_ARGS__ )
+#define REQUIRE(__VA_ARGS__) (void)(0)
+#define REQUIRE(__VA_ARGS__) INTERNAL_CATCH_TEST( "REQUIRE", Catch::ResultDisposition::Normal, __VA_ARGS__ )
+#define REQUIRE(__VA_ARGS__) (void)(0)
